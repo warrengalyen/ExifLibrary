@@ -174,10 +174,6 @@ namespace ExifLibrary
                 if (i == 0)
                 {
                     var ifdZeroth = new Dictionary<ushort, ImageFileDirectoryEntry>();
-                    foreach (var field in ifd.Fields)
-                    {
-                        ifdZeroth.Add(field.Tag, field);
-                    }
 
                     foreach (var prop in Properties)
                     {
